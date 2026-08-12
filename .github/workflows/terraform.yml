@@ -31,7 +31,7 @@ jobs:
         working-directory: ./environment
 
       - name: Terraform Plan
-        run: terraform plan -var-file="terraform.tfvars" -out=tfplan
+        run: terraform plan -var-file="./environment/terraform.tfvars" -out=tfplan
         working-directory: ./environment
 
       - name: Upload Plan Artifact
