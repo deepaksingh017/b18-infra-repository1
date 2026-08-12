@@ -31,8 +31,8 @@ jobs:
         working-directory: ./environment
 
       - name: Terraform Plan
-        run: terraform plan -var-file="./environment/terraform.tfvars" -out=tfplan
         working-directory: ./environment
+        run: terraform plan -var-file="terraform.tfvars" -out=tfplan -input=false
 
       - name: Upload Plan Artifact
         if: startsWith(github.ref, 'refs/heads/feature/')
