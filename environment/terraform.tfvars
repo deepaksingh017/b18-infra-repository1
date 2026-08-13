@@ -12,7 +12,7 @@ rg-dev ={
         name     = "rg3" 
         location = "East US"
     }
-    rg3 = {
+    rg4 = {
         name     = "rg4" 
         location = "East US"
     }
